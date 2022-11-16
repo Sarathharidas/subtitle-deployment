@@ -7,3 +7,4 @@ pytube==12.1.0
 requests==2.28.1
 pip install youtube_dl
 whisper
+
