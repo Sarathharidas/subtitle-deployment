@@ -29,10 +29,10 @@ def hello_world():
 
 @app.route('/translate',methods=["GET"])
 def downloadFile ():
-  #youtube_link =request.args.get('youtube-link')
-  #with youtube_dl.YoutubeDL(ydl_opts) as ydl:
-      #ydl.download([youtube_link])
-  #os.system('whisper "test.wav" --language Hindi --task translate')
+  youtube_link =request.args.get('youtube-link')
+  with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+      ydl.download([youtube_link])
+  os.system('whisper "test.wav" --language Hindi --task translate')
   text_array = []
   path_name = "test.wav.srt"
   path_to_download = os.path.abspath(path_name)
