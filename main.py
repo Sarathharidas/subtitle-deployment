@@ -34,7 +34,7 @@ def downloadFile ():
       # #ydl.download([youtube_link])
   # #os.system('whisper "test.wav" --language Hindi --task translate')
   # text_array = []
-  # path_name = "test.wav.srt"
+  path_name = "test.srt"
   # path_to_download = os.path.abspath(path_name)
   # print("Path",path_to_download)
   # path_to_html = os.path.abspath("index.html")
