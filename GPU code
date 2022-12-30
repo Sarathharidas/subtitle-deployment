@@ -1,0 +1,7 @@
+! pip install git+http://github.com/openai/whisper.git -q
+import subprocess
+import os
+
+## Terminal command written in Python
+subprocess.call(command, shell=True)
+os.system('whisper "{}.wav" --task translate'.format(name))
