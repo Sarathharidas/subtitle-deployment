@@ -10,7 +10,7 @@ from tqdm import tqdm
 app = Flask(__name__)
 run_with_ngrok(app) 
 
-UPLOAD_FOLDER = '/content/upload_video'
+UPLOAD_FOLDER = '/home/sarathharidas13'
 ALLOWED_EXTENSIONS = {'mp4'}
 
 app = Flask(__name__)
@@ -122,7 +122,7 @@ def upload_file():
 @app.route('/upload', methods=['POST'])
 def upload():
   video = request.files['video']
-  video.save('/content/upload_video/video.mp4')
+  video.save('/home/sarathharidas13/video.mp4')
   return 'Video uploaded successfully'
 
 from flask import send_from_directory
@@ -131,8 +131,10 @@ import os
 import time
 @app.route('/uploads/<name>')
 def download_file(name):
-    command = "ffmpeg -i /content/upload_video/{} -ab 160k -ac 2 -ar 44100 -vn {}.wav".format(name, name)
+    command = "ffmpeg -i /home/sarathharidas13/{} -ab 160k -ac 2 -ar 44100 -vn {}.wav".format(name, name)
     subprocess.call(command, shell=True)
     #os.system('whisper "{}.wav" --task translate'.format(name))
     #time.sleep(60)
     #return send_file('/content/{}.wav.srt'.format(name), as_attachment=True)
+    
+ 
