@@ -136,5 +136,8 @@ def download_file(name):
     #os.system('whisper "{}.wav" --task translate'.format(name))
     #time.sleep(60)
     #return send_file('/content/{}.wav.srt'.format(name), as_attachment=True)
-    
+ 
+if __name__ == '__main__':
+    app.debug
+    app.run()
  
