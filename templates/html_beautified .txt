@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add Subtitles to Your Video</title>
+    <style>
+      /* Add some styling to make the page look beautiful */
+      body {
+        font-family: sans-serif;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                    url('https://source.unsplash.com/random/1600x900') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+      }
+
+      .instructions {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: white;
+      }
+
+      .step {
+        margin-bottom: 10px;
+      }
+
+      /* Style the form to match the background */
+      form {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      input[type="file"] {
+        width: 100%;
+      }
+
+      input[type="submit"] {
+        background: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Add Subtitles to Your Video</h1>
+    <div class="instructions">
+      <p>To add subtitles to your video, please follow the below steps:</p>
+      <div class="step">
+        1. Upload your video file
+      </div>
+      <div class="step">
+        2. Get auto-generated subtitles
+      </div>
+      <div class="step">
+        3. Upload the auto-generated subtitles to YouTube, and then edit your subtitles
+      </div>
+    </div>
+    <!-- Add a form to let the user upload a video file -->
+    <form>
+      <label for="video">Upload video:</label><br>
+      <input type="file" id="video" name="video"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
